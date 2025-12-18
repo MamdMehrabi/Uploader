@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheCommit</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>📤 Telegram File Uploader</h1>
+                <p>Upload files directly to Telegram</p>
+            </div>
+
+            <form id="uploadForm" class="upload-form">
+                <div class="form-group">
+                    <label for="chatId">Chat ID:</label>
+                    <input 
+                        type="text" 
+                        id="chatId" 
+                        name="chatId" 
+                        placeholder="e.g., 123456789 or @username"
+                        required
+                    >
+                    <small>Your Telegram chat ID (numeric) or username (e.g., @username). For usernames, the user must have started a conversation with your bot first.</small>
+                    <small>50MB Max File Size</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="caption">Caption (optional):</label>
+                    <textarea 
+                        id="caption" 
+                        name="caption" 
+                        rows="3"
+                        placeholder="Add a caption for your file..."
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="fileInput" class="file-label">
+                        <span class="file-label-text">Choose File</span>
+                        <input 
+                            type="file" 
+                            id="fileInput" 
+                            name="file" 
+                            required
+                        >
+                    </label>
+                    <div id="fileName" class="file-name"></div>
+                </div>
+
+                <button type="submit" class="upload-btn" id="uploadBtn">
+                    <span class="btn-text">Upload to Telegram</span>
+                    <span class="btn-loader" id="loader"></span>
+                </button>
+            </form>
+
+            <div id="message" class="message"></div>
+        </div>
+
+        <div class="footer">
+            <p>The Dev: <a href="https://github.com/MamdMehrabi">MamdMehrabi</a></p>
+            <p>Made with ❤️ using Go</p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
+
