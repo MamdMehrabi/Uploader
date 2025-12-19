@@ -23,7 +23,7 @@ A modern web application built with Go that allows you to upload files directly 
 
 1. **Clone or navigate to the project directory:**
    ```bash
-   cd Uplaoder-1
+   cd Uplaoder
    ```
 
 2. **Install dependencies:**
