@@ -2,6 +2,10 @@
 
 A modern web application built with Go that allows you to upload files directly to Telegram through a beautiful web interface.
 
+
+## Preview
+<img src="public/image/image.png" width=auto hight=auto>
+
 ## Features
 
 - 🚀 Fast and lightweight Go backend
