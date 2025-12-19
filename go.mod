@@ -1,4 +1,4 @@
-module telegram-uploader
+module github.com/MamdMehrabi/Uploader
 
 go 1.21
 

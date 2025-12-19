@@ -2,9 +2,8 @@
 
 A modern web application built with Go that allows you to upload files directly to Telegram through a beautiful web interface.
 
-
 ## Preview
-<img src="public/image/image.png" width=auto hight=auto>
+<img src="public/image/image.png" width=auto height=auto>
 
 ## Features
 
@@ -24,7 +23,7 @@ A modern web application built with Go that allows you to upload files directly 
 
 1. **Clone or navigate to the project directory:**
    ```bash
-   cd Uplaoder
+   cd Uplaoder-1
    ```
 
 2. **Install dependencies:**
