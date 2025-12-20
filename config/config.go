@@ -12,6 +12,7 @@ type Config struct {
 	BotToken      string
 	DefaultChatID string
 	ProxyURL      string
+	Address       string
 	Port          string
 	MaxFileSizeMB int
 }
@@ -25,6 +26,7 @@ func Load() *Config {
 		BotToken:      os.Getenv("TELEGRAM_BOT_TOKEN"),
 		DefaultChatID: os.Getenv("DEFAULT_CHAT_ID"),
 		ProxyURL:      os.Getenv("HTTP_PROXY"),
+		Address:       os.Getenv("ADDRESS"),
 		Port:          os.Getenv("PORT"),
 		MaxFileSizeMB: 20, // Default 20MB
 	}
